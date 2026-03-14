@@ -34,14 +34,14 @@ export const GameCard = ({ game }: GameCardProps) => {
         ) : null}
       </div>
 
-      <div className="space-y-4 p-6">
+      <div className="space-y-2 p-6">
         <h3 className="text-xl font-semibold tracking-[-0.03em] text-slate-950">
           {game.title}
         </h3>
         <p className="min-h-12 text-sm leading-5 text-slate-600">
           {game.description}
         </p>
-        <div className="min-h-6">
+        <div className="min-h-4">
           {game.ctaLabel ? (
             <a
               className="inline-flex items-center gap-2 text-sm font-medium text-emerald-600! transition-colors duration-200 hover:text-emerald-700!"

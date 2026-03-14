@@ -7,7 +7,7 @@ import { SectionHeading } from "../ui/SectionHeading";
 export const CtaSection = () => {
   return (
     <section
-      className="scroll-mt-24 bg-[linear-gradient(90deg,#dc2626_0%,#b01219_100%)] py-20 text-white"
+      className="scroll-mt-24 bg-[linear-gradient(90deg,#dc2626_0%,#b01219_100%)] py-16 text-white sm:py-20"
       id="cta"
     >
       <Container>
@@ -19,8 +19,9 @@ export const CtaSection = () => {
             title="Prêt à transformer votre marketing ?"
           />
 
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:mt-10 sm:flex-row sm:gap-4">
             <Button
+              className="w-full sm:w-auto"
               href={demoHref}
               size="lg"
               leadingIcon={<Icon className="h-5 w-5 text-red-700" name="calendar" />}
@@ -29,6 +30,7 @@ export const CtaSection = () => {
               Planifier une démo gratuite
             </Button>
             <Button
+              className="w-full sm:w-auto"
               href={contactHref}
               leadingIcon={<Icon className="h-5 w-5" name="letter" />}
               size="lg"

@@ -44,9 +44,9 @@ export const HeroSection = () => {
       )}></div>
 
       <Container>
-        <div className="grid gap-12 pb-16 pt-12 lg:grid-cols-[minmax(0,1fr)_minmax(480px,608px)] lg:items-center lg:gap-10 lg:pb-20 lg:pt-16">
+        <div className="grid gap-10 pb-14 pt-8 sm:gap-12 sm:pb-16 sm:pt-12 lg:grid-cols-[minmax(0,1fr)_minmax(480px,608px)] lg:items-center lg:gap-10 lg:pb-20 lg:pt-16">
           <div className="max-w-152 lg:max-w-none">
-            <h1 className="mt-6 text-[2.5rem] font-bold leading-[0.96] tracking-[-0.03em] text-slate-950 sm:text-[4.5rem] lg:w-180.25 lg:text-[72px] lg:leading-none">
+            <h1 className="mt-4 text-[2.25rem] font-bold leading-[0.96] tracking-[-0.03em] text-slate-950 sm:mt-6 sm:text-[3.5rem] md:text-[4.5rem] lg:w-180.25 lg:text-[72px] lg:leading-none">
               <span className="block">Transformez</span>
               <span className="block">
                 chaque{" "}
@@ -59,20 +59,20 @@ export const HeroSection = () => {
               <span className="block">jeu</span>
             </h1>
 
-            <p className="mt-8 max-w-xl text-lg leading-8 text-slate-600">
+            <p className="mt-6 max-w-xl text-base leading-7 text-slate-600 sm:mt-8 sm:text-lg sm:leading-8">
               YouCanWin connecte vos marques aux fans de football à travers des
               mécaniques de gamification innovantes. Codes QR, cartes digitales,
               défis et récompenses.
             </p>
 
-            <div className="mt-10 grid gap-4 sm:grid-cols-3">
+            <div className="mt-8 grid gap-3 sm:mt-10 sm:grid-cols-3 sm:gap-4">
               {heroStats.map((stat) => (
                 <div
                   key={stat.label}
-                  className=" backdrop-blur-sm"
+                  className="rounded-2xl border border-slate-200/80 bg-white/70 p-4 backdrop-blur-sm sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0"
                 >
                   <p className={clsx(
-                    "text-4xl font-bold tracking-[-0.03em] text-slate-950", 
+                    "text-3xl font-bold tracking-[-0.03em] text-slate-950 sm:text-4xl",
                     {
                       emerald: "text-emerald-700!",
                       red: "text-red-700!"
@@ -87,14 +87,16 @@ export const HeroSection = () => {
               ))}
             </div>
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:gap-4">
               <Button
+                className="w-full sm:w-auto"
                 href={demoHref}
                 trailingIcon={<Icon className="h-3 w-3" name="arrow-right" />}
               >
                 Voir la démo
               </Button>
               <Button
+                className="w-full sm:w-auto"
                 href="#journey"
                 leadingIcon={<Icon className="h-4 w-4" name="play" />}
                 variant="outline"
@@ -103,7 +105,7 @@ export const HeroSection = () => {
               </Button>
             </div>
 
-            <div className="mt-12 border-t border-slate-200 pt-8">
+            <div className="mt-10 border-t border-slate-200 pt-6 sm:mt-12 sm:pt-8">
               <p className="text-xs font-medium uppercase tracking-[0.3px] text-slate-500">
                 Ils nous font confiance
               </p>

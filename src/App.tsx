@@ -14,10 +14,10 @@ import {
 
 export const App = () => {
   return (
-    <div className="min-h-screen bg-white text-slate-950 antialiased">
+    <div className="min-h-screen overflow-x-hidden bg-white text-slate-950 antialiased">
       <Header />
 
-      <main>
+      <main className="pt-18">
         <HeroSection />
         <SolutionSection />
         <JourneySection />

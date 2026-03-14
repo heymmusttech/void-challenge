@@ -395,7 +395,7 @@ export const BrandMark = ({ className, withExtra = false }: { className?: string
       <div className="leading-none flex items-center gap-2">
         <p className="text-xl font-bold tracking-[-0.03em]">Youcanwin</p>
         {withExtra && (
-          <span className=" inline-flex rounded-full bg-emerald-50 px-2 py-1 text-[0.625rem] font-semibold  text-emerald-600">
+          <span className="hidden rounded-full bg-emerald-50 px-2 py-1 text-[0.625rem] font-semibold text-emerald-600 sm:inline-flex">
             GAMES
           </span>
         )}

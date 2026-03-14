@@ -9,13 +9,13 @@ import { Container } from "./Container";
 export const Footer = () => {
   return (
     <footer
-      className="border-t border-slate-200 bg-slate-50 py-12"
+      className="border-t border-slate-200 bg-slate-50 py-10 sm:py-12"
       id="footer"
     >
       <Container>
         <div className="grid gap-8 lg:grid-cols-[minmax(0,1.25fr)_288px_288px]">
-          <div>
-            <a className="flex items-center gap-3" href="#top">
+          <div className="text-center lg:text-left">
+            <a className="flex items-center justify-center gap-3 lg:justify-start" href="#top">
                <BrandMark />
             </a>
 
@@ -24,7 +24,7 @@ export const Footer = () => {
               du football. Un service d&apos;Agency.Africa.
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-3">
+            <div className="mt-6 flex flex-wrap justify-center gap-3 lg:justify-start">
               {socialLinks.map((link) => (
                 <a
                   key={link.label}
@@ -38,7 +38,7 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div>
+          <div className="text-center lg:text-left">
             <h3 className="text-lg font-semibold tracking-[-0.02em] text-slate-950">
               Liens rapides
             </h3>
@@ -56,7 +56,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="text-center lg:text-left">
             <h3 className="text-lg font-semibold tracking-[-0.02em] text-slate-950">
               Contact &amp; Légal
             </h3>
@@ -77,10 +77,10 @@ export const Footer = () => {
 
         <div className="mt-12 border-t border-slate-200 pt-8">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-            <p className="text-sm text-slate-500">
+            <p className="text-center text-sm text-slate-500 lg:text-left">
               © 2025 Youcanwin. Tous droits réservés.
             </p>
-            <p className="text-sm text-slate-500">
+            <p className="text-center text-sm text-slate-500 lg:text-left">
               Un service de{" "}
               <span className="font-semibold text-slate-700">Agency.Africa</span>{" "}
               · games.agency.africa

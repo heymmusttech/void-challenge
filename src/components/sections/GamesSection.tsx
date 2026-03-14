@@ -5,7 +5,7 @@ import { SectionHeading } from "../ui/SectionHeading";
 
 export const GamesSection = () => {
   return (
-    <section className="scroll-mt-24 bg-slate-50 py-20" id="games">
+    <section className="scroll-mt-24 bg-slate-50 py-16 sm:py-20" id="games">
       <Container>
         <SectionHeading
           align="center"
@@ -13,7 +13,7 @@ export const GamesSection = () => {
           title="Catalogue de jeux"
         />
 
-        <div className="mt-14 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-10 grid gap-6 sm:mt-14 sm:gap-8 md:grid-cols-2 xl:grid-cols-4">
           {games.map((game) => (
             <GameCard game={game} key={game.title} />
           ))}

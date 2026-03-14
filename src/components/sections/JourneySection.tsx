@@ -6,7 +6,7 @@ import { SectionHeading } from "../ui/SectionHeading";
 
 export const JourneySection = () => {
   return (
-    <section className="scroll-mt-24 py-20" id="journey">
+    <section className="scroll-mt-24 py-16 sm:py-20" id="journey">
       <Container>
         <SectionHeading
           align="center"
@@ -14,11 +14,11 @@ export const JourneySection = () => {
           title="Un parcours client simple et engageant"
         />
 
-        <ol className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
+        <ol className="mt-10 grid gap-4 sm:mt-14 sm:gap-6 md:grid-cols-2 xl:grid-cols-5">
           {journeySteps.map((step, index) => (
             <li
               key={step.step}
-              className="relative rounded-3xl p-6 flex flex-col items-center"
+              className="relative flex flex-col items-center rounded-3xl p-5 sm:p-6"
             >
               <span className={clsx(
                 "absolute right-2.5 top-2.5 flex h-7 w-7 items-center justify-center rounded-full  text-xs font-semibold text-white",

@@ -23,7 +23,7 @@ export const PricingCard = ({ ctaHref, plan }: PricingCardProps) => {
       )}
     >
       {plan.badgeLabel ? (
-        <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[linear-gradient(90deg,#dc2626_0%,#b01219_100%)] px-4 py-1.5 text-sm font-semibold tracking-[0.18em] text-white shadow-[0_10px_24px_-14px_rgba(220,38,38,0.8)]">
+        <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[linear-gradient(90deg,#dc2626_0%,#b01219_100%)] px-4 py-1.5 text-sm font-semibold tracking-[0.03em] text-white shadow-[0_10px_24px_-14px_rgba(220,38,38,0.8)]">
           {plan.badgeLabel}
         </div>
       ) : null}
