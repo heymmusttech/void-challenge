@@ -1,0 +1,10 @@
+export { BackofficeSection } from "./BackofficeSection";
+export { BenefitsSection } from "./BenefitsSection";
+export { CapabilitiesSection } from "./CapabilitiesSection";
+export { CtaSection } from "./CtaSection";
+export { GamesSection } from "./GamesSection";
+export { HeroSection } from "./HeroSection";
+export { JourneySection } from "./JourneySection";
+export { PerformanceSection } from "./PerformanceSection";
+export { PricingSection } from "./PricingSection";
+export { SolutionSection } from "./SolutionSection";
