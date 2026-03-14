@@ -362,6 +362,71 @@ const iconDefinitions: Record<AppIconName, IconDefinition> = {
   },
 };
 
+export const SocialIcon = ({ label }: { label: string }) => {
+  switch (label) {
+    case "fb":
+      return (
+        <svg
+          aria-hidden="true"
+          className="h-5 w-5"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M13.5 21V12.8H16.3L16.7 9.6H13.5V7.55C13.5 6.63 13.76 6 15.08 6H16.8V3.14C15.96 3.05 15.12 3 14.28 3C11.79 3 10.08 4.52 10.08 7.32V9.6H7.3V12.8H10.08V21H13.5Z" />
+        </svg>
+      );
+    case "x":
+      return (
+        <svg
+          aria-hidden="true"
+          className="h-5 w-5"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M18.9 3H21L14.12 10.87L22.2 21H15.87L10.91 14.82L5.5 21H3.39L10.74 12.61L3 3H9.49L13.97 8.65L18.9 3ZM18.16 19.74H19.32L8.86 4.2H7.61L18.16 19.74Z" />
+        </svg>
+      );
+    case "ig":
+      return (
+        <svg
+          aria-hidden="true"
+          className="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="14"
+            rx="4"
+            stroke="currentColor"
+            strokeWidth="2"
+            width="14"
+            x="5"
+            y="5"
+          />
+          <circle cx="12" cy="12" r="3.25" stroke="currentColor" strokeWidth="2" />
+          <circle cx="16.4" cy="7.6" fill="currentColor" r="1.1" />
+        </svg>
+      );
+    case "in":
+      return (
+        <svg
+          aria-hidden="true"
+          className="h-5 w-5"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M6.94 8.5H3.56V19H6.94V8.5ZM7.16 5.26C7.16 4.24 6.39 3.5 5.26 3.5C4.13 3.5 3.36 4.24 3.36 5.26C3.36 6.26 4.11 7.02 5.22 7.02H5.24C6.39 7.02 7.16 6.26 7.16 5.26ZM20.64 19V12.98C20.64 9.75 18.91 8.25 16.6 8.25C14.74 8.25 13.9 9.28 13.43 10V8.5H10.05C10.09 9.49 10.05 19 10.05 19H13.43V13.14C13.43 12.83 13.45 12.52 13.54 12.3C13.78 11.68 14.32 11.03 15.24 11.03C16.45 11.03 16.94 11.95 16.94 13.3V19H20.64Z" />
+        </svg>
+      );
+    default:
+      return <span className="text-[10px] font-semibold uppercase">{label}</span>;
+  }
+};
+
 export const Icon = ({ className, name }: IconProps) => {
   const icon = iconDefinitions[name];
   const transform = getIconTransform(icon.viewBox);

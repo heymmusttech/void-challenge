@@ -3,8 +3,17 @@ import {
   footerQuickLinks,
   socialLinks
 } from "../../data/siteContent";
-import { BrandMark, Icon } from "../ui/Icons";
+import { BrandMark, Icon, SocialIcon } from "../ui/Icons";
 import { Container } from "./Container";
+
+const socialIconLabels = {
+  fb: "Facebook",
+  x: "X",
+  ig: "Instagram",
+  in: "LinkedIn"
+} as const;
+
+
 
 export const Footer = () => {
   return (
@@ -28,11 +37,11 @@ export const Footer = () => {
               {socialLinks.map((link) => (
                 <a
                   key={link.label}
-                  aria-label={link.label}
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-xs font-semibold uppercase tracking-[0.18em] text-slate-600 transition-colors duration-200 hover:border-slate-300 hover:text-slate-950"
+                  aria-label={socialIconLabels[link.label as keyof typeof socialIconLabels] ?? link.label}
+                  className="flex h-10 w-10 items-center justify-center rounded-md border border-slate-200 bg-slate-200 text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 transition-colors duration-200 hover:border-slate-300 hover:text-slate-950"
                   href={link.href}
                 >
-                  {link.label}
+                  <SocialIcon label={link.label} />
                 </a>
               ))}
             </div>

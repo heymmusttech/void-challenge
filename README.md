@@ -1,4 +1,4 @@
-# figma-2-react
+# void challenge
 
 A single-page marketing landing page built with React, TypeScript, Vite, and Tailwind CSS.
 
