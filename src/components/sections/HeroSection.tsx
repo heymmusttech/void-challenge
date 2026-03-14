@@ -98,7 +98,7 @@ export const HeroSection = () => {
               <Button
                 className="w-full sm:w-auto"
                 href="#journey"
-                leadingIcon={<Icon className="h-4 w-4" name="play" />}
+                leadingIcon={<Icon className="h-4 w-4 p-px!" name="play" />}
                 variant="outline"
               >
                 Comment ça marche
